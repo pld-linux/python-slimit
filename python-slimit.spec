@@ -6,7 +6,7 @@
 Summary:	JavaScript minifier written in Python
 Name:		python-slimit
 Version:	0.7.4
-Release:	1
+Release:	2
 License:	MIT
 Group:		Development/Languages
 URL:		http://slimit.org/
@@ -65,6 +65,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc CHANGES README.rst
 %attr(755,root,root) %{_bindir}/slimit
+%dir %{py_sitescriptdir}/%{module}
 %{py_sitescriptdir}/%{module}/*.py[co]
 %dir %{py_sitescriptdir}/%{module}/visitors
 %{py_sitescriptdir}/%{module}/visitors/*.py[co]
