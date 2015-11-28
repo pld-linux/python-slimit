@@ -38,7 +38,7 @@ lexer, pretty printer and a tree visitor.
 %setup -q -n %{module}-%{version}
 
 %build
-%{__python} setup.py build
+%py_build
 
 %if %{with tests}
 %{__python} setup.py test -m slimit.tests.test_lexer
@@ -47,10 +47,7 @@ lexer, pretty printer and a tree visitor.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-%{__python} setup.py install \
-	--skip-build \
-	--optimize=2 \
-	--root=$RPM_BUILD_ROOT
+%py_install
 
 %{__rm} -r $RPM_BUILD_ROOT%{py_sitescriptdir}/slimit/tests
 
