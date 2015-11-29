@@ -15,7 +15,7 @@ Source0:	http://pypi.python.org/packages/source/s/%{module}/%{module}-%{version}
 BuildRequires:	python-devel
 BuildRequires:	python-setuptools
 BuildRequires:	rpm-pythonprov
-BuildRequires:	rpmbuild(macros) >= 1.219
+BuildRequires:	rpmbuild(macros) >= 1.710
 BuildRequires:	unzip
 %if %{with tests}
 BuildRequires:	python-odict
