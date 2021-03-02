@@ -6,7 +6,7 @@
 Summary:	JavaScript minifier written in Python
 Name:		python-slimit
 Version:	0.7.4
-Release:	3
+Release:	4
 License:	MIT
 Group:		Development/Languages
 URL:		http://slimit.org/
